@@ -1,8 +1,19 @@
 let nomes = [];
 
-for (let i = 0; i < quantidade; i++) {
-    let nome = prompt("Digite o nome " + (i + 1) + ":");
-    nomes.push(nome);
-}
+function adicionarNomes() {
+    let input = document.querySelector("#nomeInput");
+    let nome = input.value.trim();
 
-console.log(nomes);
+if (nome === "") {
+    alert("Por favor, insira um nome");
+    return;
+
+}
+    amigos.push(nome);
+    atualizarLista(); 
+    input.value = "";
+}
+function atualizarLista() {
+
+}
+    
